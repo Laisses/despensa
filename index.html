@@ -4,17 +4,83 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Despensa</title>
+
+		<link rel="shortcut icon" type="image/svg" href="assets/img/favicon.svg">
 	</head>
 	<body>
 		<nav>
 			<div class="titulo">
 				<a href="/"><h1><span class="titulo-logo">des</span>pensa</h1></a>
-				<p class="titulo-chamada">A Net Ninja Site</p>
+				<p class="titulo-chamada">Organização de Compras</p>
 			</div>
 			<ul>
 				<li><a href="/compras">Compras</a></li>
 				<li><a href="/cadastro">Adicionar Produto</a></li>
 			</ul>
 		</nav>
+		<section class="listagem-produtos">
+			<h1>Lista de produtos</h1>
+			<table class="produtos">
+				<tr>
+					<th>Item</th>
+					<th>Quantidade</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Banana</td>
+					<td>1</td>
+					<td><button>editar</button></td>
+					<td><button>deletar</button></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="produto__nome" name="produto__nome" />
+						<label for="produto__nome"></label>
+  					</td>
+  					<td>  						
+  						<input type="number" id="produto__quantidade" name="produto__quantidade" min="0"/>
+  						<label for="produto__quantidade"></label>
+  					</td>
+  					<td>
+  						<input type="radio" id="produto__essencial-nao" name="produto__essencial" />
+  						<label for="produto__essencial--nao">Não</label>					
+  						<input type="radio" id="produto__essencial--sim" name="produto__essencial" />
+  						<label for="produto__essencial--sim">Sim</label>
+  						
+  					</td>
+  					<td>
+  						<label for="produto__essencial--qtde">Quantidade mínima:</label>				
+  						<input type="text" id="produto__essencial--qtde" name="produto__essencial--qtde" disabled/>			
+  					</td>
+				</tr>
+				<tr>
+					<td>Arroz</td>
+					<td>5</td>
+					<td><button>editar</button></td>
+					<td><button>deletar</button></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="produto__nome" name="produto__nome" />
+						<label for="produto__nome"></label>
+  					</td>
+  					<td>  						
+  						<input type="number" id="produto__quantidade" name="produto__quantidade" min="0"/>
+  						<label for="produto__quantidade"></label>
+  					</td>
+  					<td>
+  						<input type="radio" id="produto__essencial-nao" name="produto__essencial"/>
+  						<label for="produto__essencial--nao">Não</label>					
+  						<input type="radio" id="produto__essencial--sim" name="produto__essencial" />
+  						<label for="produto__essencial--sim">Sim</label>
+  						
+  					</td>
+  					<td>
+  						<label for="produto__essencial--qtde">Quantidade mínima:</label>				
+  						<input type="text" id="produto__essencial--qtde" name="produto__essencial--qtde" disabled/>			
+  					</td>
+				</tr>
+			</table>			
+		</section>
 	</body>
 </html>
