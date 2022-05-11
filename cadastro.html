@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Despensa</title>
+
+		<link rel="shortcut icon" type="image/svg" href="assets/img/favicon.svg" />
+	</head>
+	<body>
+		<nav>
+			<div class="titulo">
+				<a href="/"><h1><span class="titulo-logo">des</span>pensa</h1></a>
+				<p class="titulo-chamada">Organização de Compras</p>
+			</div>
+			<ul>
+				<li><a href="/compras">Compras</a></li>
+				<li><a href="/cadastro">Adicionar Produto</a></li>
+			</ul>
+		</nav>
+		<section class="cadastro">
+			<h1>Cadastro Novo Produto</h1>
+
+			<label for="produto__nome">Nome:</label>
+			<input type="text" id="produto__nome" name="produto__nome" />
+
+			<label for="produto__quantidade">Quantidade:</label>
+			<input type="text" id="produto__quantidade" name="produto__quantidade" /><br />
+
+			<p>O produto é essencial?</p>
+			<input type="radio" id ="produto__essencial--nao" name="produto__essencial">
+			<label for="produto__essencial--nao">Não</label>
+			<input type="radio" id="produto__essencial--sim" name="produto__essencial">
+			<label for="produto__essencial--sim">Sim</label>
+			
+			<label for="produto__essencial--qtde">Quantidade mínima:</label>
+			<input type="text" id="produto__essencial--qtde" name="produto__essencial--qtde" disabled/>
+		</section>
+	</body>
+</html>
