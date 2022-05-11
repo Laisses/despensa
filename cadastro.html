@@ -18,20 +18,22 @@
 		<section class="cadastro">
 			<h1>Cadastro Novo Produto</h1>
 
-			<label for="produto__nome">Nome:</label>
-			<input type="text" id="produto__nome" name="produto__nome" />
+			<form action="">
+				<label for="produto__nome">Nome:</label>
+				<input type="text" id="produto__nome" name="produto__nome" />
 
-			<label for="produto__quantidade">Quantidade:</label>
-			<input type="text" id="produto__quantidade" name="produto__quantidade" /><br />
+				<label for="produto__quantidade">Quantidade:</label>
+				<input type="text" id="produto__quantidade" name="produto__quantidade" /><br />
 
-			<p>O produto é essencial?</p>
-			<input type="radio" id ="produto__essencial--nao" name="produto__essencial">
-			<label for="produto__essencial--nao">Não</label>
-			<input type="radio" id="produto__essencial--sim" name="produto__essencial">
-			<label for="produto__essencial--sim">Sim</label>
+				<p>O produto é essencial?</p>
+				<input type="radio" id ="produto__essencial--nao" name="produto__essencial">
+				<label for="produto__essencial--nao">Não</label>
+				<input type="radio" id="produto__essencial--sim" name="produto__essencial">
+				<label for="produto__essencial--sim">Sim</label>
 
-			<label for="produto__essencial--qtde">Quantidade mínima:</label>
-			<input type="text" id="produto__essencial--qtde" name="produto__essencial--qtde" disabled/>
+				<label for="produto__essencial--qtde">Quantidade mínima:</label>
+				<input type="text" id="produto__essencial--qtde" name="produto__essencial--qtde" disabled/>
+			</form>			
 		</section>
 	</body>
 </html>
