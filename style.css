@@ -45,4 +45,11 @@ p, h1, h2, h3, a, ul{
 
 .titulo__chamada, .menu a {
 	color: #777;
+	padding-bottom: 20px;
+}
+
+.license {
+	color: #777;
+	text-align: center;
+	margin: 80px auto 20px;
 }
