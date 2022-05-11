@@ -1,0 +1,48 @@
+body {
+	max-width: 1200px;
+  	margin: 20px auto;
+  	padding: 0 20px;	
+	font-family: "Noto Serif", serif;
+	color: #222;
+}
+
+p, h1, h2, h3, a, ul{ 
+  text-decoration: none;
+  color: #222;
+}
+
+/* nav & footer styles */
+
+.navbar, .menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar {
+	margin-bottom: 60px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	text-transform: uppercase;
+}
+
+.menu {
+	align-items: flex-end;
+}
+
+.menu__link {
+	margin-left: 20px;
+}
+
+.logo {
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.logo--destaque {
+	font-weight: 700;
+	color: #dc144d;
+}
+
+.titulo__chamada, .menu a {
+	color: #777;
+}
