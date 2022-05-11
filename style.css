@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	max-width: 1200px;
   	margin: 20px auto;
@@ -52,4 +56,45 @@ p, h1, h2, h3, a, ul{
 	color: #777;
 	text-align: center;
 	margin: 80px auto 20px;
+}
+
+/* cadastro style */
+
+.cadastro h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.cadastro form {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.cadastro fieldset {
+	margin-bottom: 24px;
+}
+
+.novo__produto input, .produto__essencial input {
+	margin: 10px 0;
+	padding: 5px;
+}
+
+.novo__produto input {
+	margin-right: 20px;
+}
+
+.essencial--opcao {
+	margin-right: 30px;
+}
+
+.cadastro button {
+	margin-top: 20px;
+	background: #dc144d;;
+	color: white;
+	padding: 6px;
+	border: 0;
+	border-radius: 3px;
+	font-size: 1.2em;
+	cursor: pointer;
 }
