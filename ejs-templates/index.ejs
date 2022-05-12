@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<%- include("./partials/head.ejs") %>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+		<section class="listagem-produtos">
+			<h2>Todos os produtos</h2>
+			<table class="produtos">				
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Quantidade</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="produtos__lista">
+						<td class="">Banana</td>
+						<td class="">1</td>
+						<td class=""><button>editar</button></td>
+						<td class=""><button>deletar</button></td>
+					</tr>
+					<tr class="edicao">
+						<td class="edicao__nome">
+							<input type="text" id="edicao__nome" name="edicao__nome"  />
+							<label for="edicao__nome"></label>
+	  				</td>
+  					<td class="edicao__quantidade">  						
+  						<input type="number" id="edicao__quantidade" name="edicao__quantidade" min="0"/>
+  						<label for="edicao__quantidade"></label>
+  					</td>
+  					<td class="edicao__essencial">						
+							<p>O produto é essencial?</p>
+							<input type="radio" id ="edicao__essencial--nao" name="edicao__essencial">
+							<label for="edicao__essencial--nao">Não</label>
+							<input type="radio" id="edicao__essencial--sim" name="edicao__essencial">
+							<label for="edicao__essencial--sim">Sim</label>
+  					</td>
+
+  					<td class="edicao__essencial--qtde">
+  						<label for="essencial--qtde">Quant. mínima:</label>				
+  						<input type="text" id="essencial--qtde" name="essencial--qtde" class="essencial--qtde" disabled/>	
+  					</td>
+  					<td class="edicao__botao"><button>ok</button></td>
+					</tr>					
+				</tbody>				
+			</table>			
+		</section>
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>

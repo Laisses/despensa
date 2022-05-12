@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<%- include("./partials/head.ejs") %>
+	<body>
+		<%- include("./partials/nav.ejs") %>
+		<section class="cadastro">
+			<h1>Cadastrar Novo Produto</h1>
+
+			<form action="">
+				<fieldset class="novo__produto">
+					<label for="produto__nome">Nome:</label>
+					<input type="text" id="produto__nome" name="produto__nome" />
+
+					<label for="produto__quantidade">Quantidade:</label>
+					<input type="text" id="produto__quantidade" name="produto__quantidade" /><br />
+				</fieldset>		
+
+				<fieldset class="produto__essencial">
+					<legend>O produto é essencial?</legend>
+					<input type="radio" id ="essencial--nao" name="produto__essencial">
+					<label for="essencial--nao" class="essencial--opcao">Não</label>
+					<input type="radio" id="essencial--sim" name="produto__essencial">
+					<label for="essencial--sim" class="essencial--opcao">Sim</label>
+
+					<label for="essencial--qtde">Quantidade mínima:</label>
+					<input type="text" id="essencial--qtde" name="essencial--qtde" disabled/>
+				</fieldset>
+				<button>Cadastrar</button>
+			</form>			
+		</section>
+		<%- include("./partials/footer.ejs") %>
+	</body>
+</html>
