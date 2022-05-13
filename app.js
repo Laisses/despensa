@@ -12,3 +12,12 @@ app.set("views", "ejs-templates");
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
+
+
+app.get("/", (req, res) => {
+	res.render("index", {title: "lista"});
+});
+
+app.get("/cadastro", (req, res) => {
+	res.render("cadastro", {title: "cadastro"});
+});
