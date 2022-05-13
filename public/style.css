@@ -60,7 +60,7 @@ p, h1, h2, h3, a, ul{
 
 /*index style*/
 .listagem-produtos h2 {
-	font-size: 1.5em;
+	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 50px;
 }
@@ -128,7 +128,7 @@ p, h1, h2, h3, a, ul{
 /* cadastro style */
 
 .cadastro h1 {
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 50px;
 }
